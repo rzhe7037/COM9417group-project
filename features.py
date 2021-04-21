@@ -7,7 +7,7 @@ from sklearn.feature_selection import SelectFromModel
 X_train, y_train, X_val, y_val = load_data()
 X_train, X_val = scale_data(X_train, X_val)
 
-# elected features by tree based chi2 
+# selected features by chi2 
 selector = SelectKBest(chi2, k=26)
 X_train_new = selector.fit(X_train, y_train)
 print("features selecected by chi2:")

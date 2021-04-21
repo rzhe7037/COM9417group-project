@@ -15,3 +15,6 @@ def scale_data(df1, df2):
     df1 = scaler.transform(df1)
     df2 = scaler.transform(df2)
     return df1, df2
+
+def feature_selected(df,columns):
+    return df[:,columns]
