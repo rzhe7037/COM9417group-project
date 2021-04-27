@@ -8,10 +8,10 @@ gini=[3,8,9,11,15,16,19,24,30,33,35,37,57,66,68,69,74,75,77,78,80,81,83,88,91,92
 
 
 def load_data():
-    X_train = np.loadtxt("./X_train.csv", delimiter=",")
-    y_train = np.loadtxt("./y_train.csv", delimiter=",")
-    X_val = np.loadtxt("./X_val.csv", delimiter=",")
-    y_val = np.loadtxt("./y_val.csv", delimiter=",")
+    X_train = np.loadtxt("./data/X_train.csv", delimiter=",")
+    y_train = np.loadtxt("./data/y_train.csv", delimiter=",")
+    X_val = np.loadtxt("./data/X_val.csv", delimiter=",")
+    y_val = np.loadtxt("./data/y_val.csv", delimiter=",")
     X_train, X_val = scale_data(X_train,X_val)
     return X_train, y_train, X_val, y_val
 
